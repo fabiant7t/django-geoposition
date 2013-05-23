@@ -78,6 +78,7 @@ if (jQuery != undefined) {
                 'zoom': latitude && longitude ? zoom : 1
             });
             map = new google.maps.Map($mapContainer.get(0), mapOptions);
+            window.geopositionMap = map;
             marker = new google.maps.Marker({
                 'position': mapLatLng,
                 'map': map,
